@@ -1,0 +1,37 @@
+body {
+  /* If the user cannot load the Arial font, the sans-serif font is used */
+  font-family: Arial, sans-serif;
+  background-color: #eafffb;
+}
+
+h1 {
+  font-size: 38px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header > img {
+  width: 100px;
+}
+
+
+.ingredients-list {
+  list-style: square inside;
+}
+
+ol {
+  list-style: upper-roman inside;
+  font-family: helvetica;
+}
+
+.user_review h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
