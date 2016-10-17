@@ -15,6 +15,7 @@
     </script>
     <link rel="stylesheet" type="text/css" href="styling.css">
   </head>
+  <body>
     <header>
       `<img src="https://d3c5s1hmka2e2b.cloudfront.net/uploads/topic/image/4/appacademy.png" alt="App Academy Logo">`
       <nav>
@@ -25,7 +26,20 @@
         </ul>
       </nav>
     </header>
-    <body>
+      <aside>
+        <h2>Ingredients</h2>
+        <a name="Ingredients"></a>
+        <ul class="ingredients-list">
+          <li>3 avocados - peeled, pitted, and mashed</li>
+          <li>1 lime, juiced</li>
+          <li>1 teaspoon salt</li>
+          <li>1/2 cup diced onion</li>
+          <li>3 tablespoons chopped fresh cilantro</li>
+          <li>2 roma (plum) tomatoes, diced</li>
+          <li>1 teaspoon minced garlic</li>
+          <li>1 pinch ground cayenne pepper (optional)</li>
+        </ul>
+      </aside>
       <section>
         <h2>Guacmole</h2>
         <figure>
@@ -37,29 +51,15 @@
         <h3>Description</h3>
         <a name="Description"></a>
         <p>"You can make this avocado salad smooth or chunky depending on your tastes."</p>
-        <aside>
-        <h2>Ingredients</h2>
-          <a name="Ingredients"></a>
-            <ul class="ingredients-list">
-              <li>3 avocados - peeled, pitted, and mashed</li>
-              <li>1 lime, juiced</li>
-              <li>1 teaspoon salt</li>
-              <li>1/2 cup diced onion</li>
-              <li>3 tablespoons chopped fresh cilantro</li>
-              <li>2 roma (plum) tomatoes, diced</li>
-              <li>1 teaspoon minced garlic</li>
-              <li>1 pinch ground cayenne pepper (optional)</li>
-            </ul>
-          </aside>
         <h2>Directions</h2>
         <a name="Directions"></a>
-          <ol>
+          <ol class="directions">
             <li>In a medium bowl, mash together the avocados, lime juice, and salt. Mix in onion, cilantro, tomatoes, and garlic.</li>
             <li>Stir in cayenne pepper.</li>
             <li>Refrigerate 1 hour for best flavor, or serve immediately.</li>
           </ol>
       </section>
-      <section id="reviews">
+      <section id="reviews" class="reviews">
         <h2> Review </h2>
         <form id="review-form" action="/reviews" method="post">
 
@@ -82,8 +82,8 @@
             <option value="Professional Chef">Professional Chef</option>
           </select>
 
-          <label>Review
-            <textarea name="review" cols="30" rows="10"></textarea>
+          <label>
+            <textarea name="review" cols="60" rows="10"></textarea>
           </label>
 
           <input type="submit" value="Submit Review">
